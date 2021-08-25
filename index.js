@@ -1,7 +1,8 @@
 const express =require('express');
-
+const cors=require('cors');
 
 const app =express();
+app.use(cors())
 const users=["shamol","kausar","mim","rokib","janiya","nadida"]
 app.get('/',(req,res)=>{
     const fruit ={
